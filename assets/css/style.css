@@ -418,34 +418,6 @@ html{
 
 
 
-/* Mobile */
-@media screen and (max-width: 739px){
-    
-} 
-
-/* Tablet */
-@media screen and (min-width: 740px){
-    #content .content-section {
-        width: 800px;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 64px 16px;}
-
-    #content .place-body {
-        width: 100%;
-    }
-    #content .about-text {
-        margin: 15px 10px;}
-} 
-
-/* PC */
-@media screen and (min-width: 1024px){
-
-} 
-
-
-
 
 
 .modal {

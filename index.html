@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
     <link rel="icon" type="image/x-icon" href="https://e7.pngegg.com/pngimages/206/862/png-clipart-singing-singing-photography-logo-thumbnail.png">
 </head>
@@ -13,10 +15,10 @@
         <div id="header">
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#band">Band</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="">
+                <li class="list"><a href="#band" class="header-item ">Band</a></li>
+                <li class="list"><a href="#tour" class="header-item ">Tour</a></li>
+                <li class="list"><a href="#contact" class="header-item ">Contact</a></li>
+                <li class="list"><a href="">
                     More
                     <i class="nav--arrowdown ti-angle-down"></i>
 
@@ -33,6 +35,10 @@
 
            <div class="header__search">
                 <i class="search ti-search"></i>
+           </div>
+
+           <div class="header-list">
+            <i class="ti-align-justify"></i>
            </div>
               
         </div>
@@ -63,7 +69,7 @@
                         <img src="./assets/img/bandmember.jpg" alt="UyenTus" class="member-img">
                     </div>
                     <div class="member-item">
-                        <p class="member-name">Dipkute</p>
+                        <p class="member-name">TuyetKuti</p>
                         <img src="./assets/img/bandmember.jpg" alt="Dipkute" class="member-img">
                     </div>
                     <div class="member-item">
@@ -229,41 +235,6 @@
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-tickets')
-        const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.js-container')
-        const modalClose = document.querySelector('.js-close')
-
-        function showBuy() {
-            modal.classList.add('open')  // bấm vào modal thì thêm 1 class là 'open'
-        }
-
-        function hideBuy() {
-            modal.classList.remove('open')
-        }
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuy)
-        } 
-        modalClose.addEventListener('click', hideBuy)
-        modal.addEventListener('click', hideBuy)
-        modalContainer.addEventListener('click', function(event){
-            event.stopPropagation()
-        })
-
-        
-    </script>
 
 </body>
 </html>
