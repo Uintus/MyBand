@@ -21,6 +21,13 @@
         width: 100em;
         background-color: black;
     }
+    #nav li a {
+        padding: 0px 100% 0 24px;
+    }
+    #nav > li:hover > a {
+        background-color: black;
+        color: white;
+    }
     #nav .list{
         display: none;
     }
@@ -38,7 +45,10 @@
     #content .content-section {
         padding: 64px 16px;
     }
-
+    #content .place-buy-btn {
+        padding: 16px 40%;
+        
+    }
     #slider .text-content {
         display: none;
     }
@@ -82,12 +92,21 @@
         left: -10px;
         right: -10px;
     }
+    .input-contact .input {
+        margin: 4px 8px;
+        padding: 12px;
+    }
+
+
     .input-contact .input-top {
         flex-direction: column;
     }
     .modal .modal-input {
         width: 100%;
     }
+    .input-contact #send-contact {
+        padding: 15px 11.5em;
+        margin-top: 5px;
 } 
 
 /* Tablet */
